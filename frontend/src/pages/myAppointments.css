@@ -1,0 +1,122 @@
+.my-appointments {
+  padding: 2rem;
+}
+
+.my-appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-btn {
+  background: #2196f3;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.dashboard-btn:hover {
+  background: #1976d2;
+}
+
+/* Lista de turnos */
+.my-appointments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.my-appointments li {
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.my-appointments-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-appointments-info p {
+  margin: 0.2rem 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.my-appointments button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.my-appointments button:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .my-appointments {
+    padding: 1.5rem;
+  }
+
+  .my-appointments li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .my-appointments button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .my-appointments {
+    padding: 1rem;
+  }
+
+  .my-appointments-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .my-appointments-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .dashboard-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .my-appointments-info p {
+    font-size: 0.85rem;
+  }
+
+  .my-appointments button {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}
